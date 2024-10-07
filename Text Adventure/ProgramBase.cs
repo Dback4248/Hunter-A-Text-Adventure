@@ -1,8 +1,8 @@
-namespace Text_Adventure
+﻿namespace Text_Adventure
 {
-    internal class Program
+    internal class ProgramBase
     {
-        private static void Main(string[] args)
+        /*private static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Hunter's World in a chill room");
             Console.WriteLine("What room do you like to go in");
@@ -16,10 +16,10 @@ namespace Text_Adventure
             Console.WriteLine("What is your favorite video gmae");
             Console.WriteLine("Madden | Ncaa Football | Nascar | Mario Kart");
             Console.WriteLine("How long have you played the game for");
-
-
-
             {
+
+            }
+        
                 if (input == "ANI")
                 {
                     Console.WriteLine("How much points or spots have you gained");
@@ -44,5 +44,5 @@ namespace Text_Adventure
         {
             return base.ToString();
         }
-    }
-}
+        }*/
+
