@@ -59,9 +59,45 @@ namespace Text_Adventure
                 SPEED = 195;
                 Console.WriteLine("Cars going 195 mph");
                 Console.WriteLine("Their is a big wreak on the tack");
-                Console.WriteLine();
+                Console.WriteLine("Avoid the wreak and not get any damaged");
             }
+            if (input == "Skills")
+            {
+                Console.WriteLine("Bob needs to his racing line at bottom of the track");
+                Console.WriteLine("");
+            }
+        }
 
+        private static void Player()
+        {
+            Player("""< _ >""");
+        }
+
+        private static void Player(string value)
+        {
+            Console.WriteLine("How good is the player");
+            Console.WriteLine("Dose the player need to start at the back of the field");
+            Console.WriteLine("""Can the player make a come back from starting dead last""");
+            Console.WriteLine(value);
+        }
+
+        private static void StatsSetup(Random rng, int _)
+        {
+            NewMethod();
+            _ = rng.Next(1, 40);
+        }
+
+        private static void NewMethod()
+        {
+            Console.WriteLine("I know the car has 750 horse power");
+        }
+
+        private static void TargetTime()
+        {
+            Console.WriteLine("Bob aim for a 1:45");
+            Console.WriteLine("But the weather sucks and the is wet");
+            Console.WriteLine("""(_____)""");
+            Console.WriteLine("But");
         }
 
 
