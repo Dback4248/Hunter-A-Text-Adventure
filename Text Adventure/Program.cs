@@ -22,7 +22,7 @@ namespace Text_Adventure
                 return;
             }
             Console.WriteLine("What is your favorite video gmae");
-            Console.WriteLine("Madden | Ncaa Football | Nascar | Mario Kart");
+            Console.WriteLine(" Nascar | Mario Kart");
             Console.WriteLine("How long have you played the game for");
 
 
@@ -56,30 +56,42 @@ namespace Text_Adventure
                     Console.WriteLine("Second place 9 points");
                     Console.WriteLine("Thrid place 5 points");
                 }
-                SPEED = 195;
-                Console.WriteLine("Cars going 195 mph");
-                Console.WriteLine("Their is a big wreak on the tack");
-                Console.WriteLine("Avoid the wreak and not get any damaged");
+                if (input == "Speed 195")
+                {
+                    Console.WriteLine("Cars going 195 mph");
+                    Console.WriteLine("Their is a big wreak on the tack");
+                    Console.WriteLine("Avoid the wreak and not get any damaged");
+                }
+
             }
             if (input == "Skills")
             {
                 Console.WriteLine("Bob needs to his racing line at bottom of the track");
+                Console.WriteLine("Can the player make a come back from starting dead last");
+                Console.WriteLine("Dose the player need to start at the back of the field");
                 Console.WriteLine("");
+                _ = _ = Thread.Yield();
+            }
+            if (input == "TargetTime")
+            {
+                Console.WriteLine("Bob aim for a 1:45");
+                Console.WriteLine("But the weather sucks and the is wet");
+                Console.WriteLine("""(_____)""");
+                Console.WriteLine("But");
+            }
+            if (input == "Rng")
+            {
+                Console.WriteLine("rng.Next(1, 40)");
+            }
+            if (input == "StatsSetup")
+            {
+                Console.WriteLine("I know the car has 750 horse power");
+                Console.WriteLine("That most cars offer just north of two degrees of negative camber at the rear");
+                Console.WriteLine("The manufacturers try to get a competitve advantage");
+                Console.WriteLine("The tire psi needs to be 25 psi on each side of the car");
             }
         }
 
-        private static void Player()
-        {
-            Player("""< _ >""");
-        }
-
-        private static void Player(string value)
-        {
-            Console.WriteLine("How good is the player");
-            Console.WriteLine("Dose the player need to start at the back of the field");
-            Console.WriteLine("""Can the player make a come back from starting dead last""");
-            Console.WriteLine(value);
-        }
 
         private static void StatsSetup(Random rng, int _)
         {

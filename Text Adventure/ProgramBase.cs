@@ -21,7 +21,7 @@
         return;
     }
     Console.WriteLine("What is your favorite video gmae");
-    Console.WriteLine("Madden | Ncaa Football | Nascar | Mario Kart");
+    Console.WriteLine(" Nascar | Mario Kart");
     Console.WriteLine("How long have you played the game for");
     {
 
