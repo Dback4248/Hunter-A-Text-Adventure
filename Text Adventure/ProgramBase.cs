@@ -54,29 +54,42 @@
                     Console.WriteLine("First place 10 points");
                     Console.WriteLine("Second place 9 points");
                     Console.WriteLine("Thrid place 5 points");
-                }
-                SPEED = 195;
-                Console.WriteLine("Cars going 195 mph");
-                Console.WriteLine("Their is a big wreak on the tack");
-                Console.WriteLine("Avoid the wreak and not get any damaged");
+                if (input == "Rng")
+            {
+                Console.WriteLine("rng.Next(1, 40)");
+            }
+            if (input == "StatsSetup")
+            {
+                Console.WriteLine("I know the car has 750 horse power");
+                Console.WriteLine("That most cars offer just north of two degrees of negative camber at the rear");
+                Console.WriteLine("The manufacturers try to get a competitve advantage");
+                Console.WriteLine("The tire psi needs to be 25 psi on each side of the car");
+            }
+            if (input == "Objective")
+            {
+                Console.WriteLine("Get to the start finish line");
+                Console.WriteLine("Try not to die or filp up side down");
+            }
+             if (input == "Objective")
+            {
+                Console.WriteLine("Get to the start finish line");
+                Console.WriteLine("Try not to die or filp up side down");
+            }
+            else if (input == "BostPad")
+            {
+                Console.WriteLine("Player gets on the bostpad");
+                Console.WriteLine("Player gets hit by a redshell");
+            }
+            else if (input == "Skill issue Bob")
+            {
+                Console.WriteLine("                     __                        ");
+                Console.WriteLine("                     00                         ");
+                Console.WriteLine("                    |--|                           ");
+                Console.WriteLine("""                 {----}                            """);
             }
         }
 
-        private static void Player()
-        {
-            Player("""< _ >""");
-        }
 
-        private static void Player(string value)
-        {
-            Console.WriteLine("How good is the player");
-            Console.WriteLine("Dose the player need to start at the back of the field");
-            Console.WriteLine("""Can the player make a come back from starting dead last""");
-            Console.WriteLine(value);
-        }
-
-
-}
 
 public override bool Equals(object? obj)
 {

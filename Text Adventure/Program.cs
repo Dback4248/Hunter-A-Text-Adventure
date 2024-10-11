@@ -17,7 +17,7 @@ namespace Text_Adventure
             Console.WriteLine("VGD | ANI | CSN | EET");
 
             string input = Console.ReadLine();
-            if (input == "CSN")
+            if (input == "null")
             {
                 return;
             }
@@ -76,7 +76,7 @@ namespace Text_Adventure
             {
                 Console.WriteLine("Bob aim for a 1:45");
                 Console.WriteLine("But the weather sucks and the is wet");
-                Console.WriteLine("""(_____)""");
+                Console.Write("""(_>_<_)""");
                 Console.WriteLine("But");
             }
             if (input == "Rng")
@@ -90,27 +90,28 @@ namespace Text_Adventure
                 Console.WriteLine("The manufacturers try to get a competitve advantage");
                 Console.WriteLine("The tire psi needs to be 25 psi on each side of the car");
             }
+            if (input == "Objective")
+            {
+                Console.WriteLine("Get to the start finish line");
+                Console.WriteLine("Try not to die or filp up side down");
+            }
+            else if (input == "BostPad")
+            {
+                Console.WriteLine("Player gets on the bostpad");
+                Console.WriteLine("Player gets hit by a redshell");
+            }
+            else if (input == "Skill issue Bob")
+            {
+                Console.WriteLine("                     __                        ");
+                Console.WriteLine("                     00                         ");
+                Console.WriteLine("                    |--|                           ");
+                Console.WriteLine("""                 {----}                            """);
+            }
         }
 
 
-        private static void StatsSetup(Random rng, int _)
-        {
-            NewMethod();
-            _ = rng.Next(1, 40);
-        }
 
-        private static void NewMethod()
-        {
-            Console.WriteLine("I know the car has 750 horse power");
-        }
 
-        private static void TargetTime()
-        {
-            Console.WriteLine("Bob aim for a 1:45");
-            Console.WriteLine("But the weather sucks and the is wet");
-            Console.WriteLine("""(_____)""");
-            Console.WriteLine("But");
-        }
 
 
 
