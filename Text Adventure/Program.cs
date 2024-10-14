@@ -7,8 +7,9 @@ namespace Text_Adventure
         }
 
         public static int SPEED { get; private set; }
+        public static int Color { get; private set; }
 
-        private static void Main(string[] args)
+        private static void Main(string[] args, string value)
         {
             ArgumentNullException.ThrowIfNull(args);
 
@@ -56,9 +57,9 @@ namespace Text_Adventure
                     Console.WriteLine("Second place 9 points");
                     Console.WriteLine("Thrid place 5 points");
                 }
-                if (input == "Speed 195")
+                if (input == """Speed 95""")
                 {
-                    Console.WriteLine("Cars going 195 mph");
+                    Console.WriteLine("""Cars going 95 mph""");
                     Console.WriteLine("Their is a big wreak on the tack");
                     Console.WriteLine("Avoid the wreak and not get any damaged");
                 }
@@ -81,7 +82,7 @@ namespace Text_Adventure
             }
             if (input == "Rng")
             {
-                Console.WriteLine("rng.Next(1, 40)");
+                Console.WriteLine("rng.Next(1, 12)");
             }
             if (input == "StatsSetup")
             {
@@ -99,6 +100,7 @@ namespace Text_Adventure
             {
                 Console.WriteLine("Player gets on the bostpad");
                 Console.WriteLine("Player gets hit by a redshell");
+                Console.WriteLine("The player gets back up to speed");
             }
             else if (input == "Skill issue Bob")
             {
@@ -107,7 +109,20 @@ namespace Text_Adventure
                 Console.WriteLine("                    |--|                           ");
                 Console.WriteLine("""                 {----}                            """);
             }
+            else if (input == "Damage")
+            {
+                Console.WriteLine("Player gets hit by a green shell");
+                Console.WriteLine(value: "Blue shell 99 damage");
+                Console.WriteLine("Player gets Mario karted");
+                Console.WriteLine("Blue shell | Red shell | Green shell | Banana | Shock");
+            }
+            else if (input == "color")
+            {
+                Console.WriteLine(Console.ForegroundColor);
+                Console.WriteLine(value);
+            }
         }
+
 
 
 

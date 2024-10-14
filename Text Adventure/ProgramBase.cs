@@ -56,7 +56,7 @@
                     Console.WriteLine("Thrid place 5 points");
                 if (input == "Rng")
             {
-                Console.WriteLine("rng.Next(1, 40)");
+                Console.WriteLine("rng.Next(1, 12)");
             }
             if (input == "StatsSetup")
             {
