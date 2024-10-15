@@ -13,6 +13,13 @@ namespace Text_Adventure
         {
             ArgumentNullException.ThrowIfNull(args);
 
+            if (string.IsNullOrEmpty(value))
+            {
+                throw new ArgumentException($"'{nameof(value)}' cannot be null or empty.", nameof(value));
+            }
+
+            ArgumentNullException.ThrowIfNull(args);
+
             Console.WriteLine("Welcome to Hunter's World in a chill room");
             Console.WriteLine("What room do you like to go in");
             Console.WriteLine("VGD | ANI | CSN | EET");
@@ -67,7 +74,7 @@ namespace Text_Adventure
             }
             if (input == "Skills")
             {
-                Console.WriteLine("Bob needs to his racing line at bottom of the track");
+                Console.WriteLine("Sam needs to his racing line at bottom of the track");
                 Console.WriteLine("Can the player make a come back from starting dead last");
                 Console.WriteLine("Dose the player need to start at the back of the field");
                 Console.WriteLine("");
@@ -75,7 +82,7 @@ namespace Text_Adventure
             }
             if (input == "TargetTime")
             {
-                Console.WriteLine("Bob aim for a 1:45");
+                Console.WriteLine("David aimed for a 1:45");
                 Console.WriteLine("But the weather sucks and the is wet");
                 Console.Write("""(_>_<_)""");
                 Console.WriteLine("But");
@@ -121,6 +128,7 @@ namespace Text_Adventure
                 Console.WriteLine(Console.ForegroundColor);
                 Console.WriteLine(value);
             }
+
         }
 
 

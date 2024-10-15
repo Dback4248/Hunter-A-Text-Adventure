@@ -87,6 +87,22 @@
                 Console.WriteLine("                    |--|                           ");
                 Console.WriteLine("""                 {----}                            """);
             }
+            else if (input == "Damage")
+            {
+                Console.WriteLine("Player gets hit by a green shell");
+                Console.WriteLine(value: "Blue shell 99 damage");
+                Console.WriteLine("Player gets Mario karted");
+                Console.WriteLine("Blue shell | Red shell | Green shell | Banana | Shock");
+            }
+            else if (input == "color")
+            {
+                Console.WriteLine(Console.ForegroundColor);
+                Console.WriteLine(value);
+            }
+
+        }
+
+
         }
 
 
